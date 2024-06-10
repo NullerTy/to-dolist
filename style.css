@@ -1,0 +1,101 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #000;
+    --container-bg-color: #fff;
+    --button-bg-color: #28a745;
+    --button-hover-bg-color: #218838;
+    --delete-button-bg-color: #dc3545;
+    --delete-button-hover-bg-color: #c82333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    padding: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: large;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 52px);
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: large;
+}
+
+button {
+    padding: 20px;
+    margin-left: 10px;
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+li button {
+    background-color: var(--delete-button-bg-color);
+    border: none;
+    color: white;
+    padding: 25px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+li button:hover {
+    background-color: var(--delete-button-hover-bg-color);
+}
+
+.dark-mode {
+    --bg-color: #333;
+    --text-color: #fff;
+    --container-bg-color: #444;
+    --button-bg-color: #0062cc;
+    --button-hover-bg-color: #0056b3;
+    --delete-button-bg-color: #dc3545;
+    --delete-button-hover-bg-color: #c82333;
+}
